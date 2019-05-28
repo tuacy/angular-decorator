@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: './attributes-decorator/attributes-decorator.module#AttributesDecoratorModule'
   },
   {
+    path: 'parameterDecorator',
+    loadChildren: './parameter-decorator/parameter-decorator.module#ParameterDecoratorModule'
+  },
+  {
     path: '',
     redirectTo: '/classDecorator',
     pathMatch: 'full'
