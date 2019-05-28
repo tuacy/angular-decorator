@@ -3,8 +3,13 @@ import {ViewChildChildComponent} from './view-child-child.component';
 
 @Component({
   selector: 'app-decorator-view-child',
-  templateUrl: './decorator-view-child.component.html',
-  styleUrls: ['./decorator-view-child.component.less']
+  template: `
+    <h3>@ViewChild,@ViewChildren(从模板视图中获取匹配的元素)</h3>
+    <app-view-child-child #childA></app-view-child-child>
+    <app-view-child-child #childB></app-view-child-child>
+    <button (click)="clickMe()" >点我</button>
+
+  `
 })
 export class DecoratorViewChildComponent {
 
