@@ -1,6 +1,8 @@
 import {Injectable} from '@angular/core';
 
 @Injectable()
-export class OptionalComponentService {
-// todo: 逻辑
+export class HostComponentService {
+
+  // todo: 逻辑
+
 }

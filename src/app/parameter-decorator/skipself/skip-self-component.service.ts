@@ -1,7 +1,9 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable()
 export class SkipSelfComponentService {
 
-  constructor() { }
+  testFunct() {
+    console.log('1111111111111');
+  }
 }

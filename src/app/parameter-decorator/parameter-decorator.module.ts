@@ -12,6 +12,7 @@ import {InjectModuleService} from './inject/inject-module.service';
 import {SelfModuleService} from './self/self-module.service';
 import {SkipSelfDecoratorChildComponent} from './skipself/skip-self-decorator-child.component';
 import {SkipSelfModuleService} from './skipself/skip-self-module.service';
+import {HostModuleService} from "./host/host-module.service";
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import {SkipSelfModuleService} from './skipself/skip-self-module.service';
     {provide: TOKEN_INJECT_CLASS_PROVIDER, useClass: InjectModuleService},
     SelfModuleService, // 等价于 {provide: SelfModuleService, useClass: SelfModuleService}
     {provide: TOKEN_SKIP_SELF_CLASS_PROVIDER, useClass: SkipSelfModuleService},
+    HostModuleService
   ]
 })
 export class ParameterDecoratorModule {
