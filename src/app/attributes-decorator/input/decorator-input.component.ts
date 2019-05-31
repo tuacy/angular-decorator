@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-decorator-input',
-  templateUrl: './decorator-input.component.html',
-  styleUrls: ['./decorator-input.component.less']
+  template: `
+    <h2>@Input</h2>
+  `,
 })
-export class DecoratorInputComponent implements OnInit {
+export class DecoratorInputComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

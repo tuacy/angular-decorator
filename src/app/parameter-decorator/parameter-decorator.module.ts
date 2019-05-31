@@ -12,7 +12,9 @@ import {InjectModuleService} from './inject/inject-module.service';
 import {SelfModuleService} from './self/self-module.service';
 import {SkipSelfDecoratorChildComponent} from './skipself/skip-self-decorator-child.component';
 import {SkipSelfModuleService} from './skipself/skip-self-module.service';
-import {HostModuleService} from "./host/host-module.service";
+import {HostModuleService} from './host/host-module.service';
+import {HostDecoratorDirective} from './host/host-decorator.directive';
+import {HostDecoratorChildComponent} from './host/host-decorator-child.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import {HostModuleService} from "./host/host-module.service";
     SelfDecoratorComponent,
     SkipSelfDecoratorComponent,
     SkipSelfDecoratorChildComponent,
-    HostDecoratorComponent],
+    HostDecoratorComponent,
+    HostDecoratorChildComponent,
+    HostDecoratorDirective
+  ],
   imports: [
     CommonModule,
     ParameterDecoratorRoutingModule

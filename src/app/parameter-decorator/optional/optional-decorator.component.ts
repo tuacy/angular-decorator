@@ -1,7 +1,7 @@
-import {Component, Inject, InjectFlags, Injector, OnInit, Optional} from '@angular/core';
+import {Component, InjectFlags, Injector, Optional} from '@angular/core';
 import {OptionalComponentService} from './optional-component.service';
-import {TOKEN_OPTIONAL_CLASS_PROVIDER} from "../parameter-decorator-constant";
-import {SkipSelfModuleService} from "../skipself/skip-self-module.service";
+import {TOKEN_OPTIONAL_CLASS_PROVIDER} from '../parameter-decorator-constant';
+import {SkipSelfModuleService} from '../skipself/skip-self-module.service';
 
 @Component({
   selector: 'app-optional-decorator',
@@ -9,7 +9,7 @@ import {SkipSelfModuleService} from "../skipself/skip-self-module.service";
     <h3>@Optional -- 和@Inject类似，唯一的区别果如果没有找到依赖关系,注入器将提供null</h3>
   `
 })
-export class OptionalDecoratorComponent implements OnInit {
+export class OptionalDecoratorComponent {
 
 
   /**
@@ -28,9 +28,6 @@ export class OptionalDecoratorComponent implements OnInit {
     if (service == null) {
       console.log('没有注入TOKEN_OPTIONAL_CLASS_PROVIDER对应的服务');
     }
-  }
-
-  ngOnInit() {
   }
 
 }

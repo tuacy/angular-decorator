@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-content-child',
@@ -9,7 +9,8 @@ export class ContentChildComponent implements OnInit {
 
   initValue = 'content child';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

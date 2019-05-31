@@ -5,12 +5,7 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './attributes-decorator.component.html',
   styleUrls: ['./attributes-decorator.component.less']
 })
-export class AttributesDecoratorComponent implements OnInit {
+export class AttributesDecoratorComponent {
 
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
 
 }

@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-decorator-output',
-  templateUrl: './decorator-output.component.html',
-  styleUrls: ['./decorator-output.component.less']
+  template: `
+    <h2>@Output</h2>
+  `
 })
-export class DecoratorOutputComponent implements OnInit {
+export class DecoratorOutputComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

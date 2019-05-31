@@ -1,7 +1,7 @@
-import {Component, Inject, InjectFlags, Injector, OnInit, SkipSelf} from '@angular/core';
+import {Component, Inject, Injector, SkipSelf} from '@angular/core';
 import {SkipSelfComponentService} from './skip-self-component.service';
 import {SkipSelfModuleService} from './skip-self-module.service';
-import {TOKEN_SKIP_SELF_CLASS_PROVIDER} from "../parameter-decorator-constant";
+import {TOKEN_SKIP_SELF_CLASS_PROVIDER} from '../parameter-decorator-constant';
 
 @Component({
   selector: 'app-skip-self-decorator',
@@ -11,14 +11,11 @@ import {TOKEN_SKIP_SELF_CLASS_PROVIDER} from "../parameter-decorator-constant";
   `,
   providers: [SkipSelfComponentService]
 })
-export class SkipSelfDecoratorComponent implements OnInit {
+export class SkipSelfDecoratorComponent {
 
   constructor(@SkipSelf() @Inject(TOKEN_SKIP_SELF_CLASS_PROVIDER) componentService: SkipSelfModuleService,
               private injector: Injector) {
 
-  }
-
-  ngOnInit() {
   }
 
 }
